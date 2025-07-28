@@ -1,16 +1,5 @@
 @import "./base.css";
-nav {
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 6px;
-}
-nav > img {
-  width: 3em;
-  height: 3em;
-  mix-blend-mode: multiply;
-}
+
 main {
   display: flex;
   align-items: center;
