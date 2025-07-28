@@ -4,3 +4,6 @@
   box-sizing: border-box;
   font-family: "Urbanist",sans-serif !important;
 }
+body {
+  transition: all 0.3;
+}

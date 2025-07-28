@@ -15,7 +15,7 @@ import BaseLayout from "../layout/BaseLayout.astro";
     </header>
 		<main aria-label="Page Sliders">
 		  <div class="slider-container">
-		  <section class="slider1">
+		  <section class="slider1 zoom-active">
 		    <img src={getStarted.src} class="slider-img" alt="Getting Started Image" >
 		  <h2 class="slider-head fade-to-bottom">Welcome to Heliox</h2>
 		  <p class="slider-desc fade-to-bottom">Looking for a better experience and approach with task management and task completions? Let's get you fired up!</p>
@@ -85,9 +85,18 @@ nextButton.addEventListener("click",()=>{
         void ele.offsetWidth;
         ele.classList.add("fade-to-bottom");
       });
+      allSlides.forEach(slide => slide.classList.remove("zoom-active"));
+    
+      allSlides[currentFrame].classList.add("zoom-active");
       if(currentFrame === 3) {
         nextButton.innerText = "Get Started";
+        return;
       }
+  }else if (currentFrame > 3 ){
+    document.body.style.opacity = 0;
+    setTimeout(() => {
+      window.location.href = "/signup";
+        }, 300);
   }
 });
 		</script>
