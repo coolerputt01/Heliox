@@ -1,0 +1,29 @@
+---
+import "../styles/dashboard.css";
+import BaseLayout from "../layout/BaseLayout.astro";
+import userProfile from "../assets/userProfile.png";
+---
+<BaseLayout title="Heliox - Dashboard">
+  <main>
+    <section aria-label="Header and Dashboard Card Section" class="head">
+      <header>
+        <nav>
+          <div class="header-profile">
+            <img src={userProfile.src} alt="User Profile" class="user-image" width="45" height="45">
+          </div>
+        </nav>
+      </header>
+      <section>
+        <h1 class="header-head">Pulse</h1>
+      </section>
+    </section>
+    <section aria-label="Daily Progress">
+      <section aria-label="Personal Progress">
+        
+      </section>
+      <section aria-label="Community Progress">
+        
+      </section>
+    </section>
+  </main>
+</BaseLayout>

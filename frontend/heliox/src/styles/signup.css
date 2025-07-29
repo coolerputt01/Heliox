@@ -110,7 +110,17 @@
 .form label .input:valid + span {
   color: green;
 }
+.privacy-text {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  color: grey;
+  margin-top: 1rem;
+}
 
+.privacy-text > a {
+  margin-left: 0.1rem;
+}
 .submit {
   border: none;
   outline: none;
