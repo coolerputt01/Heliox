@@ -5,6 +5,7 @@ nav {
   align-items: center;
   justify-content: flex-start;
   padding: 6px;
+  background: transparent;
 }
 nav > img {
   width: 3em;
