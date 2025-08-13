@@ -1,5 +1,6 @@
 ---
 const { title = "Heliox" } = Astro.props;
+import ToolBar from "../components/ToolBar.astro";
 ---
 
 <html lang="en">
@@ -14,10 +15,10 @@ const { title = "Heliox" } = Astro.props;
       href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
     <slot name="head" />
   </head>
   <body style="margin: 0; font-family: 'Urbanist', sans-serif;">
     <slot />
+    <ToolBar />
   </body>
 </html>
