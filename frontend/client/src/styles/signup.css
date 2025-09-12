@@ -1,0 +1,172 @@
+@import "./base.css";
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 90vh;
+}
+/* From Uiverse.io by Yaya12085 */ 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90vw;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.title {
+  font-size: 28px;
+  color: #F76988;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before,.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #F76988;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: #F76988;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: #F76988;
+}
+
+.signin a:hover {
+  text-decoration: underline #F76988;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+.privacy-text {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  color: grey;
+  margin-top: 1rem;
+}
+
+.privacy-text > a {
+  margin-left: 0.1rem;
+}
+.submit {
+  border: none;
+  outline: none;
+  background-color: #F76988;
+  padding: 10px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  transform: .3s ease;
+}
+
+.submit:hover {
+  background-color: #F769;
+}
+.submit::after {
+  content: '';
+  position: absolute;
+  top: -60%;
+  left: -4%;
+  width: 3em;
+  height: 3.2em;
+  border-radius: 50%;
+  background: #942f45;
+  opacity: 0.4;
+}
+.submit::before {
+  content: '';
+  position: absolute;
+  bottom: -60%;
+  right: -4%;
+  width: 3em;
+  height: 3.2em;
+  border-radius: 50%;
+  background: #942f45;
+  opacity: 0.4;
+}
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
