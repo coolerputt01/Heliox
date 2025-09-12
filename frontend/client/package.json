@@ -7,7 +7,7 @@
     "dev": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "k-ernest",
+  "author": " ",
   "license": "ISC",
   "dependencies": {
     "@vitejs/plugin-vue": "^1.10.0",
