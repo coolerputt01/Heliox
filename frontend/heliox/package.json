@@ -1,17 +1,19 @@
 {
   "name": "client",
   "version": "1.0.0",
-  "description": "frontend",
+  "description": "NovaCar frontend",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": " ",
+  "author": "k-ernest",
   "license": "ISC",
   "dependencies": {
     "@vitejs/plugin-vue": "^1.10.0",
+    "@vue/compiler-sfc": "^3.2.47",
     "vite": "^2.9.16",
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "vue-router": "^4.0.15"
   }
 }

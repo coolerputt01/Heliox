@@ -11,7 +11,7 @@ const navLinks = ref([
 ]);
 
 // current path 
-const currentPath = ref("/challenges");
+const currentPath = ref("/Home");
 
 </script>
 
