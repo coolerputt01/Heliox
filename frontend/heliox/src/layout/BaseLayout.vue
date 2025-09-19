@@ -7,6 +7,11 @@ const props = defineProps({
     type: String,
     default: "Heliox",
   },
+
+  ShowToolBar: {
+    type: String,
+    default: 'show',
+  },
 });
 
 watchEffect(() => {
@@ -22,7 +27,7 @@ watchEffect(() => {
     <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>{{ props.title }}</title>
+      <title>{{ props.title}}</title>
 
       <!-- .. -->
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,7 +40,7 @@ watchEffect(() => {
     </head>
     <body style="margin: 0; font-family: 'Urbanist', sans-serif">
       <slot />
-      <ToolBar />
+        <ToolBar v-if="props.ShowToolBar === 'show'"/>
     </body>
   </html>
 </template>
