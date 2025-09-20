@@ -1,7 +1,7 @@
 @import "./base.css";
 
 .privacy-container {
-  max-width: 760px;
+  max-width: 100%;
   margin: auto;
   padding: 2rem 1.5rem;
   color: #333;
@@ -33,6 +33,7 @@
   font-size: 0.95rem;
   cursor: pointer;
   align-self: flex-start;
+  margin-left: 0.6rem;
   margin-bottom: 1rem;
   font-weight: 500;
 }

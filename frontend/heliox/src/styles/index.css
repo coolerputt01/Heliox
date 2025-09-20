@@ -13,7 +13,7 @@ main {
   justify-content: flex-start;
   flex-direction: row;
   width: 480vw;
-  height: 65vh;
+  height: 68vh;
   overflow: hidden;
   margin-left: 380vw;
   transition: all 0.3s;
@@ -150,63 +150,3 @@ section > p {
     transform: scale(1);
   }
 }
-
-
-
-
-/* 
-
-
-nextButton.addEventListener(() => {
-  nextButton.classList.remove("clicked");
-//   void nextButton.offsetWidth;
-//   nextButton.classList.add("clicked");
-//   if (currentFrame < 3) {
-//     currentFrame += 1;
-//     let offSet = -currentFrame * 100;
-//     sliderContainer.style.transform = `translateX(${offSet}vw)`;
-//     dots.forEach((dot) => {
-//       dot.classList.remove("current-frame");
-//     });
-//     dots[currentFrame].classList.add("current-frame");
-//     let activeSlide = allSlides[currentFrame];
-//     activeSlide.querySelectorAll(".fade-to-bottom").forEach((ele) => {
-//       ele.classList.remove("fade-to-bottom");
-//       void ele.offsetWidth;
-//       ele.classList.add("fade-to-bottom");
-//     });
-//     allSlides.forEach((slide) => slide.classList.remove("zoom-active"));
-
-//     allSlides[currentFrame].classList.add("zoom-active");
-//     if (currentFrame === 3) {
-//       nextButton.innerText = "Get Started";
-//       return;
-//     }
-//   } else if (currentFrame === 3 && nextButton.innerText === "Get Started") {
-//     document.body.style.opacity = 0;
-//     setTimeout(() => {
-//       window.location.href = "/signup";
-//     }, 300);
-//   }
-});
-
-
-
-
-const frames = [
-  {
-    name: ref("getStarted"),
-  },
-  {
-    name: ref("trackIllustration"),
-  },
-  {
-    name: ref("organise"),
-  },
-  {
-    name: ref("letsgo"),
-  },
-];
-
-
-*/

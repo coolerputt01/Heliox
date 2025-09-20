@@ -1,46 +1,9 @@
 @import "./base.css";
 
-body {
-  margin: 0;
-  background-color: #f9f9f9;
-  background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
-  background-size: 20px 20px;
-  min-height: 100vh;
-  overflow: hidden;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 60vh;
-  gap: 5em;
-  border-radius: 16px;
-  text-align: center;
-  max-width: 100vw;
-}
-
 .verify-img {
   width: 200px;
   height: auto;
-  margin-bottom: 3.5rem;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-p {
-  font-size: 1rem;
-  color: grey;
   margin-bottom: 2rem;
-  padding: 0 1rem;
-  font-size: 0.8em;
 }
 
 .button {
@@ -68,7 +31,7 @@ p {
   background: #942f45;
   opacity: 0.4;
 }
-button::before {
+.button::before {
   content: '';
   position: absolute;
   bottom: -60%;
@@ -79,7 +42,7 @@ button::before {
   background: #942f45;
   opacity: 0.4;
 }
-button:hover {
+.button:hover {
   background-color: #F76988;
   animation: none;
 }

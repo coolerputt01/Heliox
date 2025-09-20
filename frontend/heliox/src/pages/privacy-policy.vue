@@ -1,9 +1,13 @@
----
+<script setup>
 import "../styles/privacy-policy.css";
-import BaseLayout from "../layout/BaseLayout.astro";
+import BaseLayout from "../layout/BaseLayout.vue";
 import privacyHero from "../assets/privacy-policy.svg"; // Optional visual aid
----
-<BaseLayout title="Heliox – Privacy Policy">
+
+</script>
+
+
+<template>
+  <BaseLayout title="Heliox – Privacy Policy" ShowToolBar="hide">
   <main class="privacy-container">
     <section class="header-section">
       <a class="back-button" href="/signup">← Back to Signup</a>
@@ -11,7 +15,7 @@ import privacyHero from "../assets/privacy-policy.svg"; // Optional visual aid
         <h1>Privacy Policy</h1>
         <p>Welcome to Heliox. Your privacy and trust are essential to us. We created this page to be transparent, clear, and honest — just like our app.</p>
       </div>
-      <img src={privacyHero.src} alt="Privacy visual" class="privacy-image" width="120" height="120" />
+      <img :src="privacyHero" alt="Privacy visual" class="privacy-image" width="120" height="120" />
     </section>
 
     <section class="section">
@@ -60,3 +64,8 @@ import privacyHero from "../assets/privacy-policy.svg"; // Optional visual aid
     </section>
   </main>
 </BaseLayout>
+</template>
+
+
+
+
